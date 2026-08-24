@@ -8,7 +8,7 @@ the demo-data loader is likewise unauthenticated. On a public URL that is an
 instance takeover, so the routes are refused here before they reach a view.
 """
 
-from django.http import Http404
+from django.http import HttpResponseNotFound
 
 BLOCKED_PREFIXES = (
     "initialize-database",
@@ -26,5 +26,7 @@ class BlockSetupRoutesMiddleware:
     def __call__(self, request):
         path = request.path.lstrip("/")
         if path.startswith(BLOCKED_PREFIXES):
-            raise Http404("Setup routes are disabled on this deployment.")
+            return HttpResponseNotFound(
+                "Setup routes are disabled on this deployment."
+            )
         return self.get_response(request)
