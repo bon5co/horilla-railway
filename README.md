@@ -1,5 +1,9 @@
 # horilla-railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/horilla-hr-or-just-updated-open-source-h?referralCode=Z1xivh&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
+**Deploy on Railway:** [Horilla HR template](https://railway.com/deploy/horilla-hr-or-just-updated-open-source-h?referralCode=Z1xivh&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
 Railway wrapper image for [Horilla](https://github.com/horilla-opensource/horilla),
 the open-source HR management system (HRMS).
 
